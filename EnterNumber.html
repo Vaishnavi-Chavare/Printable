@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+    <link rel="stylesheet" href="EnterNumber.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"> <!-- Google Font Link -->
+</head>
+<body>
+    <div class="full-page-container">
+        <!-- Left background section with image and gradient blend -->
+        <div class="left-background">
+            <img src="OTP.png" alt="Logo in left background">
+        </div>
+
+        <!-- Right background section with content -->
+        <div class="right-background">
+            <!-- Top-right corner logo -->
+            <img src="Printable logo.png" alt="Logo in top-right corner" class="top-right-logo">
+            <h1 class="otp-verification-text">OTP Verification</h1>
+            <p class="subtext">We will send you One Time Password on your Phone Number</p>
+            
+            <!-- New Section: Mobile Number Input and Terms Checkbox -->
+            <div class="input-container">
+                <label for="mobile-number" class="mobile-label">Mobile number</label>
+                <div class="mobile-input-wrapper">
+                    <span class="country-code">+91</span>
+                    <input type="text" id="mobile-number" placeholder="Enter Your Number" class="mobile-input">
+                </div>
+                <div class="terms-container">
+                    <input type="checkbox" id="terms-checkbox">
+                    <label for="terms-checkbox" class="terms-text">
+                        I have read and agreed to <a href="#" class="terms-link">Terms, Conditions</a> and <a href="#" class="privacy-link">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="cta-button">Get OTP</button>    
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

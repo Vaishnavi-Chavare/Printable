@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Full-page container to control the background sections */
+.full-page-container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    height: 100vh; /* Full height */
+}
+
+/* Left section with image background and gradient overlay */
+.left-background {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Img1.png styling in the left background */
+.left-background img {
+    width: 90%; /* Make the image a bit smaller */
+    height: 800px;
+    margin-top: 50px; /* Move the image down slightly */
+    object-fit: contain; /* Ensures image is resized without cropping */
+}
+
+/* Right section background */
+.right-background {
+    flex: 1;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Top-right logo styling */
+.right-background .top-right-logo {
+    position: absolute;
+    top: 20px; /* Spacing from the top */
+    right: 20px; /* Spacing from the right */
+    width: 100px;
+    height: 74px;
+    z-index: 1; /* Ensures it stays above other elements */
+}
+
+/* OTP Verification heading */
+.otp-verification-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 2rem;
+    width: 100%;
+    max-width: 533px; /* Limit width */
+    text-align: center;
+    color: #333;
+    line-height: 1.2; /* Adjust line height */
+    margin-top: 100px; /* Space from the top */
+}
+
+/* Style for subtext under OTP Verification */
+.subtext {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 533px; /* Limit width */
+    text-align: center;
+    color: #666;
+    margin-top: 20px; /* Spacing between OTP Verification and subtext */
+}
+
+/* New styles for the input container */
+.input-container {
+    margin-top: 40px; /* Spacing below the subtext */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the input and terms checkbox */
+    width: 100%; /* Ensure it takes full width */
+    max-width: 533px; /* Limit the width to match OTP heading and subtext */
+}
+
+/* Label for mobile number */
+.mobile-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #111010;
+    margin-bottom: 5px;
+    text-align: left; /* Align label to the left */
+}
+
+/* Mobile number input wrapper */
+.mobile-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+    max-width: 350px; /* Limit the width of the input wrapper */
+    margin-bottom: 20px; /* Spacing below the input */
+}
+
+.country-code {
+    margin-right: 10px;
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.mobile-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+/* Terms and conditions container styling */
+.terms-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#terms-checkbox {
+    margin-right: 10px;
+}
+
+.terms-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.terms-link, .privacy-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms-link:hover, .privacy-link:hover {
+    text-decoration: underline;
+}
+.cta-button {
+    background-color: #0072ff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    width: 200px; /* Button width */
+    height: 50px; /* Button height */
+    border-radius: 51px; /* Cylindrical shape (half of height to make it fully rounded) */
+    font-size: 1.3em; /* Larger text size */
+    font-weight: 500; /* Bold text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    text-transform: none; /* Prevents text transformation */
+}
+
+.cta-button:hover {
+    background-color: #005bb5; /* Darker shade for hover effect */
+}

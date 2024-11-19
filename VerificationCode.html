@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+    <link rel="stylesheet" href="VerificationCode.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"> <!-- Google Font Link -->
+</head>
+<body>
+    <div class="full-page-container">
+        <!-- Left background section with image and gradient blend -->
+        <div class="left-background">
+            <img src="OTP Verify.png" alt="Logo in left background">
+        </div>
+
+        <!-- Right background section with content -->
+        <div class="right-background">
+            <!-- Top-right corner logo -->
+            <img src="Printable logo.png" alt="Logo in top-right corner" class="top-right-logo">
+            <h1 class="otp-verification-text">Verification Code</h1>
+            <p class="subtext">We have sent the verification code to your mobile number</p>
+            
+            <div class="terms-container">
+                <label for="terms-checkbox" class="terms-text">
+                    123 456 7890 - <a href="#" class="terms-link">Change</a>
+                </label>
+            </div>
+
+            <!-- OTP input boxes below the terms link -->
+            <div class="otp-container">
+                <input type="text" class="otp-box" maxlength="1" />
+                <input type="text" class="otp-box" maxlength="1" />
+                <input type="text" class="otp-box" maxlength="1" />
+                <input type="text" class="otp-box" maxlength="1" />
+            </div>
+
+            <button class="cta-button">Verify OTP</button> 
+            <p class="resend-text">Resend OTP in <span class="resend-timer">02:46</span></p>
+        </div>
+    </div>
+</body>
+</html>
