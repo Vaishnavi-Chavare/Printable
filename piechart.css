@@ -1,0 +1,94 @@
+.reviews-container {
+  width: 60%;
+  margin-top: 270px;
+  margin-left: 380px;
+}
+
+.reviews-title {
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.review-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.review-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.review-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.review-rating p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.star-rating {
+  color: #f0c14b;
+}
+
+.star-rating .fa-star {
+  color: #f0c14b; /* Yellow stars */
+}
+
+.star-rating .fa-star-o {
+  color: #e2d244; /* Grey stars */
+}
+.star-rating .fa-star-o {
+  color: #ceb944; /* Grey stars */
+}
+.star-rating .fa-star-o {
+  color: #b8adad; /* Grey stars */
+}
+
+
+.latest-button {
+  background-color: rgb(171, 81, 171);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 180px; /* Adjusted to place below the table heading */
+}
+
+.latest-button:hover {
+  background-color: #6a0dad; /* Darker purple on hover */
+}
+
+.load-more {
+  background-color: #007BFF; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 750px;
+}
+
+.load-more:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

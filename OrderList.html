@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="OrderList.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="Logomain.png" alt="Logo" class="logo">
+
+        <!-- Sidebar Links -->
+        <ul>
+            <li class="dashboard">
+                <a href="Dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
+            <li class="order-list">
+                <a href="OrderList.html">
+                    <i class="fas fa-list"></i> Order List
+                </a>
+            </li>
+            <li>
+                <a href="order-details.html">
+                    <i class="fas fa-box"></i> Orders Details
+                </a>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="fas fa-inbox"></i> Inbox
+                </a>
+            </li>
+            <li>
+                <a href="Review.html">
+                    <i class="fas fa-star"></i> Reviews
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+            </li>
+        </ul>
+
+        <!-- Logout Section -->
+        <div class="logout-container">
+            <div class="logout">
+                <i class="fas fa-sign-out-alt"></i> Log Out
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search here...">
+                <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="top-right-container"
+                style="position: absolute; top: 10px; right: 10px; display: flex; align-items: center; gap: 15px;">
+                <!-- Icons Section -->
+                <div class="actions" style="display: flex; gap: 15px;">
+                    <button class="icon-btn" style="border: none; background: none; position: relative;">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge">65</span>
+                    </button>
+                    <button class="icon-btn" style="border: none; background: none; position: relative;">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge">21</span>
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider" style="height: 20px; width: 1px; background-color: grey;"></div>
+
+                <!-- Greeting Section -->
+                <div class="greeting" style="display: flex; align-items: center;">
+                    <p style="margin: 0;">Hello, Mamatha</p>
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" style="margin-left: 10px;">
+                </div>
+            </div>
+
+            <div class="header-title">
+                <h2>Your Orders</h2>
+                <p>This is your order list data</p>
+            </div>
+            <div class="right-container">
+                <div class="status-filters">
+                    <div class="filter-item">
+                        <i class="fas fa-link"></i>
+                        <span>All Status</span>
+                        <i class="fas fa-caret-down dropdown-icon"tabindex="0"></i>>
+                                <ul class="dropdown-menu">
+                                    <li><a href="NewOrder.html">New Order</a></li>
+                                    <li><a href="OnDelivery.html">On Delivery</a></li>
+                                    <li><a href="Delivered.html">Delivered</a></li>
+                                    <li><a href="DeliveredToday.html">Delivered Today</a></li>
+                                </ul>
+                            </div>
+                    
+                    <div class="filter-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Last Week</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="blue-bar">
+                        <span class="blue-bar-item">Order ID</span>
+                        <span class="blue-bar-item">Date</span>
+                        <span class="blue-bar-item">Location</span>
+                        <span class="blue-bar-item">Customer Name</span>
+                        <span class="blue-bar-item">Amount</span>
+                        <span class="blue-bar-item">Status Order</span>
+                    </div>
+                    <!-- Table Section -->
+                    <div class="order-table">
+                        <div class="table-row">
+                            <div class="table-cell">#555232</div>
+                            <div class="table-cell">28 Sep 2024, 12:39</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Kalyan Kumar</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> 
+                            
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555240</div>
+                            <div class="table-cell">30 Sep 2024, 12:35</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Ryan Korsgaard</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555330</div>
+                            <div class="table-cell">28 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Zaire Dorwart</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status delivered">Delivered</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555530</div>
+                            <div class="table-cell">27 Sep 2024, 12:20</div>
+                            <div class="table-cell">New York</div>
+                            <div class="table-cell">Corey Lipshutz</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> 
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555630</div>
+                            <div class="table-cell">28 Sep 2024, 12:20</div>
+                            <div class="table-cell">New York</div>
+                            <div class="table-cell">Alena Torff</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555830</div>
+                            <div class="table-cell">18 Sep 2024, 12:35</div>
+                            <div class="table-cell">lllinois</div>
+                            <div class="table-cell">Gustavo Botosh</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> 
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555930</div>
+                            <div class="table-cell">21 Sep 2024, 12:30</div>
+                            <div class="table-cell">lllinois</div>
+                            <div class="table-cell">Willson Schleifer</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555730</div>
+                            <div class="table-cell">28 Sep 2024, 12:10</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Anika Siphron</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status delivered">Delivered</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555230</div>
+                            <div class="table-cell">23 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Omar Bator</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status delivered">Delivered</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555290</div>
+                            <div class="table-cell">22 Sep 2024, 12:30</div>
+                            <div class="table-cell">New York</div>
+                            <div class="table-cell">Abram Curtis</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555330</div>
+                            <div class="table-cell">28 Sep 2024, 12:33</div>
+                            <div class="table-cell">Callifornia</div>
+                            <div class="table-cell">Miracle Press</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> 
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555230</div>
+                            <div class="table-cell">20 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Abram Bergson</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status delivered">Delivered</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555230</div>
+                            <div class="table-cell">26 Sep 2024, 12:36</div>
+                            <div class="table-cell">Texas</div>
+                            <div class="table-cell">Ruben Calzoni</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555230</div>
+                            <div class="table-cell">27 Sep 2024, 12:38</div>
+                            <div class="table-cell">Texas</div>
+                            <div class="table-cell">Talan Workman</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status delivered">Delivered</div>
+                        </div>
+                        <div class="pagination">
+                            <div class="pagination-info">
+                                Showing <span>20 out of 40</span>
+                            </div>
+                            <div class="pagination-controls">
+                                Page <span>1/2</span>
+                            </div>
+                            
+                                <script>
+                                    const currentPage = 1; // Current page
+                                    const totalPages = 2; // Total pages
+                                    const rowsShown = 20; // Rows currently displayed
+                                    const totalRows = 40; // Total rows
+                                
+                                    document.querySelector('.pagination-info span').textContent = `${rowsShown} out of ${totalRows}`;
+                                    document.querySelector('.pagination-controls span').textContent = `${currentPage}/${totalPages}`;
+                                </script>
+                </div>
+</body>
+
+</html>

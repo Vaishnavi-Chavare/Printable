@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="Logomain.png" alt="Logo" class="logo">
+    
+        <!-- Sidebar Links -->
+        <ul>
+            <li class="dashboard">
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
+            <li class="order-list">
+                <a href="OrderList.html">
+                    <i class="fas fa-list"></i> Order List
+                </a>
+            </li>
+            <li>
+                <a href="order-details.html">
+                    <i class="fas fa-box"></i> Orders Details
+                </a>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="fas fa-inbox"></i> Inbox
+                </a>
+            </li>
+            <li>
+                <a href="Review.html">
+                    <i class="fas fa-star"></i> Reviews
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+            </li>
+        </ul>
+    
+        <!-- Logout Section -->
+        <div class="logout-container">
+            <div class="logout">
+                <i class="fas fa-sign-out-alt"></i> Log Out
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search here...">
+                <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+             <!-- Icons, Divider, and Greeting Section -->
+    <div class="top-bar-right" style="display: flex; align-items: center; gap: 20px;">
+        <!-- Icons Section -->
+        <div class="actions">
+            <button class="icon-btn">
+                <i class="fa fa-envelope"></i>
+                <span class="badge">65</span>
+            </button>
+            <button class="icon-btn">
+                <i class="fa fa-bell"></i>
+                <span class="badge">21</span>
+            </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Greeting Section -->
+        <div class="greeting">
+            <p>Hello, Mamatha</p>
+            <img src="main profile .png" alt="User Avatar">
+        </div>
+    </div>
+</div>
+
+        <div class="header-title">
+            <h2>Dashboard</h2>
+            <p>Hello Mamatha, Welcome back to printable</p>
+        </div>
+
+        <div class="filter-period">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="rgb(52, 30, 213)"
+              class="bi bi-calendar-date"
+              viewBox="0 0 16 16"
+            >
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+              <path d="M4.5 8a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2.5.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm-3 4.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <select>
+              <option>17 April 2020 - 21 May 2020</option>
+            </select>
+            <span class="dropdown-arrow">▼</span>
+          </div>
+          
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-icon">
+                    <img src="icon 1.png" alt="Icon 1">
+                </div>
+                <div class="box-content">
+                    <p class="box-number">350</p>
+                    <p class="box-label">Total Orders</p>
+                    <p class="box-growth"> 80% (30 days)</p>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="box-icon">
+                    <img src="icon2.png" alt="Icon 2">
+                </div>
+                <div class="box-content">
+                    <p class="box-number">300</p>
+                    <p class="box-label">Total Delivered</p>
+                    <p class="box-growth"> 75% (30 days)</p>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="box-icon">
+                    <img src="icon3.png" alt="Icon 3">
+                </div>
+                <div class="box-content">
+                    <p class="box-number">50</p>
+                    <p class="box-label">Total Canceled</p>
+                    <p class="box-growth"> 25% (30 days)</p>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="box-icon">
+                    <img src="icon4.png" alt="Icon 4">
+                </div>
+                <div class="box-content">
+                    <p class="box-number">₹1 Lakh</p>
+                    <p class="box-label">Total Revenue</p>
+                    <p class="box-growth">12% (30 days)</p>
+                </div>
+            </div>
+
+        <!-- Pie Chart Section -->
+        <div class="main-container">
+            <div class="pie-chart-section">
+                <div class="section-header">
+                    <h3>Pie Chart</h3>
+                    <div class="controls">
+                        <label>
+                            <input type="radio" name="chart-options" value="chart"> Chart
+                        </label>
+                        <label>
+                            <input type="radio" name="chart-options" value="show-value"> Show Value
+                        </label>
+                        <button class="menu-btn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>                    
+                </div>
+                <div class="charts">
+                    <div class="chart-item">
+                        <div class="chart-circle" style="--percentage: 81; --color: #ff5c5c;">
+                            <span class="chart-text">81%</span>
+                        </div>
+                        <p>Total Order</p>
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-circle" style="--percentage: 22; --color: #50c878;">
+                            <span class="chart-text">22%</span>
+                        </div>
+                        <p>Customer Growth</p>
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-circle" style="--percentage: 62; --color: #4da6ff;">
+                            <span class="chart-text">62%</span>
+                        </div>
+                        <p>Total Revenue</p>
+                    </div>
+                    <div class="chart-container">
+                        <h2>Chart Order</h2>
+                        <div class="chart">
+                            <!-- Graph -->
+                            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Gradient background -->
+                                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#4d47c3" stop-opacity="0.2" />
+                                    <stop offset="100%" stop-color="#4d47c3" stop-opacity="0" />
+                                </linearGradient>
+                                <path d="M0 70 Q50 30 100 50 Q150 90 200 60 Q250 20 300 50" fill="none" stroke="#4d47c3" stroke-width="2" />
+                                <path d="M0 70 Q50 30 100 50 Q150 90 200 60 Q250 20 300 50 L300 100 L0 100 Z" fill="url(#gradient)" />
+                                <!-- Highlighted point -->
+                                <circle cx="100" cy="50" r="5" fill="white" stroke="#4d47c3" stroke-width="2" />
+                                <!-- Tooltip -->
+                                <rect x="90" y="10" width="70" height="40" rx="5" fill="#fff" stroke="#e0e0e0" />
+                                <text x="100" y="30" font-size="10" fill="#4d4d4d">456 Order</text>
+                                <text x="100" y="40" font-size="8" fill="#9a9a9a">Oct 18th, 2020</text>
+                            </svg>
+                            <!-- X-axis labels -->
+                            <div class="x-axis">
+                                <span>Sunday</span>
+                                <span>Monday</span>
+                                <span>Tuesday</span>
+                                <span>Wednesday</span>
+                                <span>Thursday</span>
+                                <span>Friday</span>
+                                <span>Saturday</span>
+                            </div>
+                            </div>
+                            <div class="order-list-text">
+                                <p>Orders List</p>
+                                <button class="view-all-btn">View All</button>
+                                </div>
+                            <div class="blue-bar">
+                                <span class="blue-bar-item">Order ID</span>
+                                <span class="blue-bar-item">Date</span>
+                                <span class="blue-bar-item">Location</span>
+                                <span class="blue-bar-item">Customer Name</span>
+                                <span class="blue-bar-item">Amount</span>
+                                <span class="blue-bar-item">Status Order</span>
+                            </div>
+                            <div class="order-table">
+                        <div class="table-row">
+                            <div class="table-cell">#555232</div>
+                            <div class="table-cell">28 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Kalyan Kumar</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> <!-- Add this class -->
+                            
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555240</div>
+                            <div class="table-cell">30 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Ryan Korsgaard</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div> <!-- Add this class -->
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555330</div>
+                            <div class="table-cell">28 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Zaire Dorwart</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status delivered">Delivered</div> <!-- Add this class -->
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555530</div>
+                            <div class="table-cell">27 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Corey Lipshutz</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> <!-- Add this class -->
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555630</div>
+                            <div class="table-cell">28 Sep 2024, 12:20</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Alena Torff</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div> <!-- Add this class -->
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555830</div>
+                            <div class="table-cell">18 Sep 2024, 12:35</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Gustavo Botosh</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status new-order">New Order</div> <!-- Add this class -->
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">#555930</div>
+                            <div class="table-cell">21 Sep 2024, 12:30</div>
+                            <div class="table-cell">Hyderabad, Kukkatpalli</div>
+                            <div class="table-cell">Willson Schleifer</div>
+                            <div class="table-cell">₹2,000</div>
+                            <div class="table-cell status on-delivery">On Delivery</div> <!-- Add this class -->
+                        </div>
+                        </div>
+
+                        <div class="recent-orders-container">
+                            <h1>Recent Orders</h1>
+                            <!-- Order Items 1 -->
+                            <div class="order-item">
+                              <div class="order-header">
+                                <div class="order-date">29/03/2024 12:30 PM</div>
+                                <div class="order-time">30 min ago</div>
+                              </div>
+                              <div class="order-details">
+                                <img src="Profile .png" alt="Phillip Schleifer">
+                                <div>
+                                  <p>Phillip Schleifer</p>
+                                  <p>Exam Pdf</p>
+                                </div>
+                              </div>
+                              <div class="order-actions">
+                                <button class="accept-btn">Accept</button>
+                                <button class="cancel-btn">Cancel</button>
+                              </div>
+                            </div>
+                          <!-- Order Items 2 -->
+                            <div class="order-item">
+                              <div class="order-header">
+                                <div class="order-date">29/03/2024 10:00 AM</div>
+                                <div class="order-time">1 hour ago</div>
+                              </div>
+                              <div class="order-details">
+                                <img src="Profile .png" alt="...">
+                                <div>
+                                  <p>Phillip Schleifer</p>
+                                  <p>Exam Pdf</p>
+                                </div>
+                              </div>
+                              <div class="order-actions">
+                                <button class="accept-btn">Accept</button>
+                                <button class="cancel-btn">Cancel</button>
+                              </div>
+                            </div>
+                             <!-- Order Items 3 -->
+                             <div class="order-item">
+                                <div class="order-header">
+                                  <div class="order-date">29/03/2024 10:00 AM</div>
+                                  <div class="order-time">1 hour ago</div>
+                                </div>
+                                <div class="order-details">
+                                  <img src="Profile .png" alt="...">
+                                  <div>
+                                    <p>Phillip Schleifer</p>
+                                    <p>Exam Pdf</p>
+                                  </div>
+                                </div>
+                                <div class="order-actions">
+                                  <button class="accept-btn">Accept</button>
+                                  <button class="cancel-btn">Cancel</button>
+                                </div>
+                              </div>
+                              <!-- Order Items 4 -->
+                             <div class="order-item">
+                                <div class="order-header">
+                                  <div class="order-date">29/03/2024 10:00 AM</div>
+                                  <div class="order-time">1 hour ago</div>
+                                </div>
+                                <div class="order-details">
+                                  <img src="Profile .png" alt="...">
+                                  <div>
+                                    <p>Phillip Schleifer</p>
+                                    <p>Exam Pdf</p>
+                                  </div>
+                                <div class="order-actions">
+                                  <button class="accept-btn">Accept</button>
+                                  <button class="cancel-btn">Cancel</button>
+                                </div>
+                            
+                                    <p>Phillip Schleifer</p>
+                                    <p>Exam Pdf</p>
+                                  </div>
+                                <div class="order-actions">
+                                  <button class="accept-btn">Accept</button>
+                                  <button class="cancel-btn">Cancel</button>
+                                </div>
+                              
+                                 
+                                 

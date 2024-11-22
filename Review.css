@@ -1,0 +1,384 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f8fb;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background-color: #4d47c3;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content between top and bottom */
+}
+
+/* Logo container */
+.logo {
+    width: 100%; /* Logo will occupy the full width of the sidebar */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 60px; /* Limit the height to fit within sidebar */
+    margin-bottom: 20px; /* Add space below the logo */
+    display: block; /* Ensures image is displayed properly */
+    object-fit: contain; /* Ensures the logo scales correctly */
+}
+
+
+/* Sidebar links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Ensures links take available space */
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Order List button with white container */
+.sidebar ul li.Reviews{
+    background-color: white; /* White container for Order List */
+    border-radius: 8px;
+}
+
+.sidebar ul li.Reviews a {
+    color: #4d47c3; /* Match the sidebar background color */
+}
+
+/* Logout Section */
+.sidebar .logout {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Space between icon and text */
+    margin: 20px 0; /* Space from other elements */
+    padding: 10px;
+}
+
+/* Logout at the bottom */
+.sidebar .logout-container {
+    display: flex;
+    justify-content: center; /* Center the logout button */
+    margin-bottom: 20px; /* Add space at the very bottom */
+}
+
+/* Top Bar */
+.top-bar {
+    margin-left: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative; /* Allow the search button to be positioned inside */
+    width: 250px; /* Adjust the width as needed */
+}
+
+.search-bar input {
+    padding: 10px 40px 10px 10px; /* Add padding on the right for the button */
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Adjust font size to match placeholder and icon alignment */
+    box-sizing: border-box; /* Ensure padding doesn't affect the input size */
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px; /* Position the button at the end of the input field */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+}
+
+.search-btn i {
+    font-size: 18px; /* Adjust size of the icon */
+    color: #888; /* Color of the icon */
+}
+.icon-btn i {
+    color: #7a5ef8; 
+    background-color: #f3efff; 
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px; 
+    position: relative;
+}
+
+/* Style for the notification badge */
+.icon-btn .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #7a5ef8; 
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transform: translate(50%, -50%);
+}
+
+/* Header Title Styles */
+.header-title {
+    position: absolute;
+    left: 270px; 
+    top: 90px; 
+    max-width: 600px; 
+    text-align: left;
+}
+
+.header-title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000; 
+    margin: 0; 
+}
+
+.header-title p {
+    font-size: 16px;
+    color: #b5abab; /* Light gray */
+    margin: 5px 0 0; /* Slight space above the text */
+}
+.filter-period {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-period select {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    appearance: none; /* Remove default arrow */
+    cursor: pointer;
+  }
+  
+  .filter-period select:focus {
+    outline: none;
+  }
+  
+  .bi-calendar-date {
+    width: 24px; /* Larger size */
+    height: 24px;
+    fill: rgb(52, 30, 213); /* Purple color */
+    transition: transform 0.3s ease; /* Highlight effect */
+  }
+  
+  .bi-calendar-date:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  
+  .dropdown-arrow {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(24, 15, 195); /* Purple color */
+  }
+  /* Container at the bottom */
+  .reviews-container {
+    width: 70%; /* Makes the container take the full width of the viewport */
+    margin: -150px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 70px;  /* Positions the container 20px from the bottom */
+    left: 57%;
+    transform: translateX(-50%); /* Centers the container horizontally */
+    z-index: 1000;  /* Keeps it above other content */
+    min-height: 10px;
+}
+
+.reviews-header .filter button {
+    background-color: purple; /* Purple background */
+    color: white; /* White text for better contrast */
+    border: none; /* Removes default button border */
+    border-radius: 5px; /* Adds rounded corners */
+    padding: 6px 15px; /* Adds padding for better size */
+    font-size: 14px; /* Ensures text is legible */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-left: 950px;
+}
+
+.reviews-header .filter button:hover {
+    background-color: rgb(154, 48, 200); /* Darker purple for hover effect */
+}
+
+.reviews-header .filter button:focus {
+    outline: 2px solid lightblue; /* Focus outline for accessibility */
+    outline-offset: 2px; /* Space between button and outline */
+}
+
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.review-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.review-details h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.review-details .role {
+    font-size: 12px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.review-details .review-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.review-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.review-actions .tags {
+    margin-bottom: 15px;
+}
+
+.review-actions .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.tag.good {
+    background-color: #71aa73; /* Green */
+}
+
+.tag.excellent {
+    background-color: #7E57C2; /* Purple */
+}
+
+.review-actions .ratings {
+    display: flex;
+    align-items: center;
+}
+
+.review-actions .ratings p {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    font-size: 18px;
+    color: #ccc;
+    margin-right: 2px;
+}
+
+.star.full {
+    color: #FFD700; /* Yellow */
+}
+
+.star.half {
+    background: linear-gradient(90deg, #FFD700 50%, #ccc 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.star.empty {
+    color: #ccc;
+}
+
+.load-more {
+    display: block;
+    margin: 80px auto;
+    padding: 10px 20px;
+    background-color: #7E57C2; /* Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 80px;
+}
+  
+  
+  

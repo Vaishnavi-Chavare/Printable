@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Review.css">
+</head>
+<body>
+        <div class="sidebar">
+            <img src="Logomain.png" alt="Logo" class="logo">
+        
+        <!-- Sidebar Links -->
+        <ul>
+            <li class="dashboard">
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
+            <li class="order-list">
+                <a href="OrderList.html">
+                    <i class="fas fa-list"></i> Order List
+                </a>
+            </li>
+            <li>
+                <a href="order-details.html">
+                    <i class="fas fa-box"></i> Orders Details
+                </a>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="fas fa-inbox"></i> Inbox
+                </a>
+            </li>
+            <!-- Reviews Link with White Container Kept As-Is -->
+            <li class="Reviews">
+                <a href="Review.html">
+                    <i class="fas fa-star"></i> Reviews
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+            </li>
+        </ul>
+        
+    
+        <!-- Logout Section -->
+        <div class="logout-container">
+            <div class="logout">
+                <i class="fas fa-sign-out-alt"></i> Log Out
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search here...">
+                <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="top-right-container" style="position: absolute; top: 10px; right: 10px; display: flex; align-items: center; gap: 15px;">
+                <!-- Icons Section -->
+                <div class="actions" style="display: flex; gap: 15px;">
+                    <button class="icon-btn" style="border: none; background: none; position: relative;">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge">65</span>
+                    </button>
+                    <button class="icon-btn" style="border: none; background: none; position: relative;">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge">21</span>
+                    </button>
+                </div>
+                <!-- Divider -->
+                <div class="divider" style="height: 20px; width: 1px; background-color: grey;"></div>
+              
+                <!-- Greeting Section -->
+                <div class="greeting" style="display: flex; align-items: center;">
+                  <p style="margin: 0;">Hello, Mamatha</p>
+                  <img src="https://via.placeholder.com/40" alt="User Avatar" style="margin-left: 10px;">
+                </div>
+              </div>
+              
+            <div class="header-title">
+            <h2>Reviews</h2>
+            <p>Dashboard / Customer review</p>
+        </div>
+        <div class="filter-period">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="rgb(52, 30, 213)"
+              class="bi bi-calendar-date"
+              viewBox="0 0 16 16"
+            >
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+              <path d="M4.5 8a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2.5.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm-3 4.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <select>
+              <option>17 April 2020 - 21 May 2020</option>
+            </select>
+            <span class="dropdown-arrow">▼</span>
+          </div>
+          
+          <div class="reviews-container">
+            <div class="reviews-header">
+                <p>Here is Customer review about your restaurant</p>
+                <div class="filter">
+                    <button aria-label="Filter by latest reviews" title="Filter by latest reviews">Latest ▼</button>
+                </div>
+            </div>
+        
+            <!-- Review Item 1 -->
+            <div class="review-item">
+                <div class="review-details">
+                    <img src="Profile .png" alt="Phillip Schleifer">
+                    <div>
+                        <h4>Phillip Schleifer</h4>
+                        <p class="role">Student &bull; 25 June 2020</p>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <div class="tags">
+                        <span class="tag good">Good Services</span>
+                        <span class="tag excellent">Excellent</span>
+                    </div>
+                    <div class="ratings">
+                        <p>3.5</p>
+                        <div class="stars">
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star half">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Review Item 2 -->
+            <div class="review-item">
+                <div class="review-details">
+                    <img src="Profile 2.png" alt="Tiana Workman">
+                    <div>
+                        <h4>Tiana Workman</h4>
+                        <p class="role">Student &bull; 25 June 2020</p>
+                        <p class="review-text">
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <div class="tags">
+                        <span class="tag excellent">Excellent</span>
+                    </div>
+                    <div class="ratings">
+                        <p>4.0</p>
+                        <div class="stars">
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Review Item 3 -->
+            <div class="review-item">
+                <div class="review-details">
+                    <img src="Profile 3.png" alt="Giana Dorwart">
+                    <div>
+                        <h4>Giana Dorwart</h4>
+                        <p class="role">Student &bull; 25 June 2020</p>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <div class="tags">
+                        <span class="tag excellent">Excellent</span>
+                    </div>
+                    <div class="ratings">
+                        <p>4.5</p>
+                        <div class="stars">
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star half">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="review-details">
+                    <img src="Profile 4.png" alt="Giana Dorwart">
+                    <div>
+                        <h4>Giana Dorwart</h4>
+                        <p class="role">Student &bull; 25 June 2020</p>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <div class="tags">
+                        <span class="tag excellent">Excellent</span>
+                    </div>
+                    <div class="ratings">
+                        <p>4.5</p>
+                        <div class="stars">
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star half">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Review Item 4 -->
+            <div class="review-item">
+                <div class="review-details">
+                    <img src="Profile 5.png" alt="Craig Stanton">
+                    <div>
+                        <h4>Craig Stanton</h4>
+                        <p class="role">Student &bull; 25 June 2020</p>
+                        <p class="review-text">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <div class="tags">
+                        <span class="tag good">Good Services</span>
+                    </div>
+                    <div class="ratings">
+                        <p>3.0</p>
+                        <div class="stars">
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star full">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            <button class="load-more">Load More</button>
+        </div>
+        
+        

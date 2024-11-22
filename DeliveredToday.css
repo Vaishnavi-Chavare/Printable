@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f8fb;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background-color: #4d47c3;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content between top and bottom */
+}
+
+.logo {
+    width: 100%; /* Logo will occupy the full width of the sidebar */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 60px; /* Limit the height to fit within sidebar */
+    margin-bottom: 20px; /* Add space below the logo */
+    display: block; /* Ensures image is displayed properly */
+    object-fit: contain; /* Ensures the logo scales correctly */
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Ensures links take available space */
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Order List button with white container */
+.sidebar ul li.order-list {
+    background-color: white; /* White container for Order List */
+    border-radius: 8px;
+}
+
+.sidebar ul li.order-list a {
+    color: #4d47c3; /* Match the sidebar background color */
+}
+
+/* Sidebar icons */
+.sidebar ul li a i {
+    font-size: 20px;
+}
+
+/* Logout Section */
+.sidebar .logout {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Space between icon and text */
+    margin: 20px 0; /* Space from other elements */
+    padding: 10px;
+}
+
+/* Logout at the bottom */
+.sidebar .logout-container {
+    display: flex;
+    justify-content: center; /* Center the logout button */
+    margin-bottom: 20px; /* Add space at the very bottom */
+}
+
+/* Top Bar */
+.top-bar {
+    margin-left: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative; /* Allow the search button to be positioned inside */
+    width: 250px; /* Adjust the width as needed */
+}
+
+.search-bar input {
+    padding: 10px 40px 10px 10px; /* Add padding on the right for the button */
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Adjust font size to match placeholder and icon alignment */
+    box-sizing: border-box; /* Ensure padding doesn't affect the input size */
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px; /* Position the button at the end of the input field */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+}
+
+.search-btn i {
+    font-size: 18px; /* Adjust size of the icon */
+    color: #888; /* Color of the icon */
+}
+.icon-btn i {
+    color: #7a5ef8; /* Purple color for the icons */
+    background-color: #f3efff; /* Light purple background for the icons */
+    padding: 10px;
+    border-radius: 50%; /* Makes the background circular */
+    font-size: 20px; /* Adjust as needed */
+    position: relative;
+}
+
+/* Style for the notification badge */
+.icon-btn .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #7a5ef8; /* Purple for the badge */
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transform: translate(50%, -50%);
+}
+
+/* Header Title Styles */
+.header-title {
+    position: absolute;
+    left: 270px; /* Position under the search bar and aligned to the left */
+    top: 90px; /* Adjust the vertical position under the search bar */
+    max-width: 600px; /* Restrict the width for better alignment */
+    text-align: left;
+}
+
+.header-title h2 {
+    font-size: 24px;
+    font-weight: 500; /* Semi-bold */
+    color: #000; /* Black */
+    margin: 0; /* Remove default margin */
+}
+
+.header-title p {
+    font-size: 16px;
+    color: #b5abab; /* Light gray */
+    margin: 5px 0 0; /* Slight space above the text */
+}
+.actions {
+    display: flex;
+    align-items: center;
+}
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative; /* Position the container relative to its parent */
+    top: 70px; /* Adjust the top position to align with the header text */
+    right: 20px; /* Adjust the right position to create some space */
+}
+
+.status-filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0; /* Add background color for better visibility */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+/* The caret icon */
+.filter-item i {
+    font-size: 18px;
+    color: #7a5ef8; /* Set the icon color to purple */
+    cursor: pointer; /* Make the icon appear clickable */
+}
+
+/* Style for the dropdown */
+.filter-item .dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; /* White background for rows */
+    border: 1px solid #007bff; /* Blue border */
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+    border-radius: 6px; /* Rounded corners for a modern look */
+    width: 180px; /* Adjust width to fit text nicely */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* When the parent (filter-item) is focused or contains focus, show the dropdown */
+.filter-item:focus-within .dropdown-menu {
+    display: block;
+}
+
+.filter-item .dropdown-menu li {
+    padding: 0; /* Reset padding to handle anchors */
+}
+
+.filter-item .dropdown-menu li a {
+    color: #007bff; /* Blue text */
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px; /* Comfortable spacing for rows */
+    font-size: 14px; /* Standard font size */
+    font-weight: 500; /* Slightly bolder text for visibility */
+    background-color: white; /* Ensure white rows */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth hover transition */
+    border-radius: 6px; /* For smoother hover effects */
+}
+
+.filter-item .dropdown-menu li a:hover {
+    background-color: #e7f1ff; /* Light blue background on hover */
+    color: #0056b3; /* Darker blue text for hover effect */
+}
+.blue-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px; /* Space between the status filter and the blue bar */
+    width: calc(83% - 130px); /* Full width minus padding from right */
+    position: fixed;
+    left: 300px;
+    top: 200px; /* Adjust position to be below the status filter */
+    text-align: center;
+}
+
+.blue-bar-item {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1; /* Distribute columns equally */
+    padding: 0 10px; /* Add spacing inside the items */
+}
+
+/* Table Section */
+.order-table {
+    display: block; /* Set to block so each row appears on a new line */
+    position: fixed;
+    left: 300px; /* Align with the blue bar */
+    top: 260px; /* Position directly below the blue bar */
+    width: calc(86% - 140px); /* Match the width of the blue bar */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for table */
+    border: 1px solid #ddd; /* Border for clarity */
+}
+
+.table-row {
+    display: flex; /* Use flex for individual rows */
+    justify-content: space-between;
+    width: 100%; /* Ensure row spans the entire table width */
+    margin-bottom: 5px; /* Add spacing between rows */
+}
+
+.table-cell {
+    flex: 1; /* Ensures the cell takes equal width */
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd; /* Add dividing line */
+}
+/* Style for order statuses */
+.status {
+    border-radius: 5px; /* Rounded corners for status cells */
+    padding: 5px 10px; /* Padding for the status */
+    color: white; /* Default text color */
+    font-weight: 600; /* Slightly bolder text */
+    text-align: center; /* Center-align text */
+    display: inline-block; /* Prevent the box from stretching */
+    width: -3px; /* Make the width fit the text content */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.status.new-order {
+    background-color: rgba(255, 0, 0, 0.1); /* Faint red */
+    color: #d83232; /* Bright red text */
+}
+
+.status.on-delivery {
+    background-color: rgba(128, 0, 255, 0.1); /* Faint purple */
+    color: #8000FF; /* Bright purple text */
+}
+
+.status.delivered {
+    background-color: rgba(0, 255, 0, 0.1); /* Faint green */
+    color: #00A000; /* Bright green text */
+}
+
+.pagination {
+    margin-top: 20px; /* Add space between the table and pagination */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding to match the table's layout */
+    border-top: 1px solid #ddd; /* Optional: separate the pagination from the table */
+    font-size: 14px;
+    font-family: 'Lato', sans-serif; /* Using Lato font as per your preference */
+    background-color: #f9f9f9; /* Light background for the pagination section */
+    width: 100%;
+    box-sizing: border-box; /* Ensure the width matches table's width */
+}
+
+/* Pagination Info (Left) */
+.pagination-info span {
+    font-weight: bold;
+}
+
+/* Pagination Controls (Right) */
+.pagination-controls span {
+    font-weight: bold;
+}
+

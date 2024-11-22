@@ -1,0 +1,185 @@
+/* Add custom styles here */
+    .reviews-table tr {
+      border-bottom: 1px solid #ccc; /* Gray line between reviews */
+    }
+    .reviews-table tr:last-child {
+      border-bottom: none; /* Remove the line after the last review */
+    }
+    .review-row {
+      padding: 10px 0; /* Add some space around each row */
+    }
+  </style>
+</head>
+<body>
+  <div class="reviews-container">
+    <h2 class="reviews-title">Here is Customer review about your restaurant</h2>
+    <table class="reviews-table">
+      <thead>
+        <tr>
+          <th>Profile</th>
+          <th>Review Details</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- First review row -->
+        <tr class="review-row">
+          <td class="review-profile">
+            <img src="Phillip_Schleifer.jpg" alt="Phillip Schleifer">
+          </td>
+          <td class="review-details">
+            <div class="review-info">
+              <p><strong>Phillip Schleifer</strong></p>
+              <p>Student, 25 June 2020</p>
+              <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            </div>
+          </td>
+          <td class="review-rating">
+            <p>3.5</p>
+            <div class="star-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i> <!-- Empty star for the remaining part -->
+            </div>
+          </td>
+        </tr>
+
+        <!-- Second review row -->
+        <tr class="review-row">
+          <td class="review-profile">
+            <img src="John_Doe.jpg" alt="John Doe">
+          </td>
+          <td class="review-details">
+            <div class="review-info">
+              <p><strong>John Doe</strong></p>
+              <p>Engineer, 15 July 2020</p>
+              <p class="review-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+          </td>
+          <td class="review-rating">
+            <p>4.0</p>
+            <div class="star-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Third review row -->
+        <tr class="review-row">
+          <td class="review-profile">
+            <img src="Jane_Smith.jpg" alt="Jane Smith">
+          </td>
+          <td class="review-details">
+            <div class="review-info">
+              <p><strong>Jane Smith</strong></p>
+              <p>Teacher, 20 August 2020</p>
+              <p class="review-text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </div>
+          </td>
+          <td class="review-rating">
+            <p>4.5</p>
+            <div class="star-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i> <!-- Half star -->
+            </div>
+          </td>
+        </tr>
+
+        <!-- Fourth review row -->
+        <tr class="review-row">
+          <td class="review-profile">
+            <img src="Alice_Brown.jpg" alt="Alice Brown">
+          </td>
+          <td class="review-details">
+            <div class="review-info">
+              <p><strong>Alice Brown</strong></p>
+              <p>Designer, 10 September 2020</p>
+              <p class="review-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+          </td>
+          <td class="review-rating">
+            <p>5.0</p>
+            <div class="star-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> <!-- All stars filled -->
+            </div>
+          </td>
+        </tr>
+
+        <!-- Fifth review row -->
+        <tr class="review-row">
+          <td class="review-profile">
+            <img src="Bob_Johnson.jpg" alt="Bob Johnson">
+          </td>
+          <td class="review-details">
+            <div class="review-info">
+              <p><strong>Bob Johnson</strong></p>
+              <p>Chef, 5 October 2020</p>
+              <p class="review-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+          </td>
+          <td class="review-rating">
+            <p>2.0</p>
+            <div class="star-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i> <!-- Two stars filled -->
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <button class="load-more">Load More</button>
+  </div>
+
+  <!-- Add script to dynamically update stars -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const ratings = document.querySelectorAll('.review-rating');
+
+      ratings.forEach(function(rating) {
+        const stars = parseFloat(rating.querySelector('p').textContent);
+        const starIcons = rating.querySelectorAll('.star-rating i');
+        
+        // Full stars - change to yellow
+        let fullStars = Math.floor(stars);
+        for (let i = 0; i < fullStars; i++) {
+          starIcons[i].classList.remove('fa-star-o');
+          starIcons[i].classList.add('fa-star');
+        }
+
+        // Half star - not applicable in this case, as you want only 4 full and 1 empty
+        if (stars % 1 >= 0.5) {
+          starIcons[fullStars].classList.remove('fa-star-o');
+          starIcons[fullStars].classList.add('fa-star-half-o');
+        }
+
+        // Empty star - last one in grey color
+        for (let i = fullStars; i < 5; i++) {
+          starIcons[i].classList.remove('fa-star');
+          starIcons[i].classList.remove('fa-star-half-o');
+          starIcons[i].classList.add('fa-star-o');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+          
+          
